@@ -1,0 +1,20 @@
+Learn Kubernetes commands
+
+Command used to start minikube and the Dashboard
+	start minikube service
+	 minikube start --extra-config="apiserver.cors-allowed-origins=['http://boot.dev']"
+
+	minikube dashboard --port=8080
+
+Kubernetes command
+	kubectl get pods
+    #shows the pods
+
+    kubectl apply -f api-configmap.yaml
+    #applies this specific .yaml configmap file after creation
+
+    kubectl apply -f web-service.yaml
+    #applies this specific webservice yaml file after creation
+    
+    kubectl get svc
+    #shows running services, that were applied with "kubectl apply -f"
